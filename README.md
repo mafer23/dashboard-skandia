@@ -1,4 +1,4 @@
-# Prueba Técnica – Front Page Skandia
+# 🚀 Prueba Técnica – Front Page Skandia
 
 Plataforma financiera desarrollada en **Angular 20** con **standalone components** y **TailwindCSS**, que permite visualizar productos financieros, asociarlos a objetivos y explorar recomendaciones personalizadas.
 
@@ -9,7 +9,7 @@ Plataforma financiera desarrollada en **Angular 20** con **standalone components
 
 ---
 
-## Características principales
+## ✨ Características principales
 
 - Dashboard financiero con slider de productos interactivo
 - Cards reutilizables con datos mockeados desde servicios
@@ -20,7 +20,7 @@ Plataforma financiera desarrollada en **Angular 20** con **standalone components
 
 ---
 
-## Tecnologías utilizadas
+## 📱 Tecnologías utilizadas
 
 | Tecnología | Versión | Propósito |
 |-----------|---------|-----------|
