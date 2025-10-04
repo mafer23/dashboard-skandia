@@ -174,6 +174,9 @@ Gracias a Skandia por la oportunidad de demostrar habilidades en desarrollo fron
  #### Banner 
  <img width="1325" height="599" alt="image" src="https://github.com/user-attachments/assets/1e0dd151-084f-40d8-a600-6bef5c16ee73" />
 
+ <img width="1100" height="577" alt="image" src="https://github.com/user-attachments/assets/0117fb19-ecab-4d81-8844-6699e406b4a7" />
+
+
 #### Slider
 <img width="1343" height="336" alt="image" src="https://github.com/user-attachments/assets/491025d7-d94d-4928-987c-7bb386857e12" />
 
