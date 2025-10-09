@@ -1,59 +1,196 @@
-# PruebaSkandia
+# 🚀 Prueba Técnica – Front Page Skandia
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.2.
+Plataforma financiera desarrollada en **Angular 20** con **standalone components** y **TailwindCSS**, que permite visualizar productos financieros, asociarlos a objetivos y explorar recomendaciones personalizadas.
 
-## Development server
+![Angular](https://img.shields.io/badge/Angular-20-red?style=flat&logo=angular)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat&logo=typescript)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.0-38B2AC?style=flat&logo=tailwind-css)
+![Testing](https://img.shields.io/badge/Testing-Jasmine%2FKarma-green?style=flat)
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
+## ✨ Características principales
+
+- Dashboard financiero con slider de productos interactivo
+- Cards reutilizables con datos mockeados desde servicios
+- Asociación de productos a objetivos de inversión
+- Explorador de recomendaciones con CTAs dinámicos
+- Diseño mobile-first completamente responsive
+- Testing unitario en componentes clave
+
+---
+
+## 📱 Tecnologías utilizadas
+
+| Tecnología | Versión | Propósito |
+|-----------|---------|-----------|
+| Angular | 20 | Framework frontend |
+| TypeScript | 5.0+ | Tipado estático |
+| TailwindCSS | 3.x | Estilos utilitarios |
+| RxJS | 7.x | Programación reactiva |
+| Jasmine/Karma | - | Testing unitario |
+
+---
+
+## Estructura del proyecto
+
+```
+src/
+┣ app/
+┃ ┣ front-page/              # Feature principal
+┃ ┃ ┣ components/            # Componentes reutilizables (UI)
+┃ ┃ ┣ core/                  # Servicios, modelos y lógica de negocio
+┃ ┃ ┣ layouts/               # Layouts (estructura global)
+┃ ┃ ┣ pages/                 # Páginas enrutadas
+┃ ┃ ┗ front-page.routes.ts   # Configuración de rutas
+┃ ┣ app.config.ts            # Configuración global
+┃ ┣ app.routes.ts            # Rutas raíz
+┃ ┣ app.component.ts         # Componente raíz standalone
+┃ ┗ app.component.spec.ts    # Tests del componente raíz
+┣ assets/                    # Imágenes y recursos estáticos
+┣ styles.css                 # Estilos globales (Tailwind)
+┣ main.ts                    # Bootstrap de Angular
+┗ index.html                 # Entrada de la aplicación
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## Instalación y ejecución
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Prerequisitos
 
-```bash
-ng generate component component-name
-```
+- Node.js >= 18.x
+- npm >= 9.x
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+### 1. Clonar el repositorio
 
 ```bash
-ng build
+git clone https://github.com/tuusuario/prueba-skandia.git
+cd prueba-skandia
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### 2. Instalar dependencias
 
 ```bash
-ng test
+npm install
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+### 3. Ejecutar servidor de desarrollo
 
 ```bash
-ng e2e
+npm start
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+La aplicación estará disponible en: **http://localhost:4200**
 
-## Additional Resources
+### 4. Ejecutar pruebas unitarias
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```bash
+npm test
+```
+
+### 5. Generar build de producción
+
+```bash
+npm run build
+```
+
+Los archivos compilados estarán en `dist/`
+
+---
+
+## Testing
+
+Se implementaron pruebas unitarias para garantizar la calidad del código.
+
+### Escenarios probados:
+
+- Creación correcta de componentes
+- Funcionalidad de scroll en slider (izquierda/derecha)
+  
+### Ejecutar tests:
+
+```bash
+# Ejecutar todos los tests
+npm test
+
+# Ejecutar con coverage
+npm run test:coverage
+```
+
+---
+
+## Decisiones técnicas
+
+### ¿Por qué Angular 20?
+- Soporte corporativo y estabilidad
+- Excelente rendimiento y optimización
+- Comunidad activa y amplia documentación
+
+### ¿Por qué Standalone Components?
+- Menos boilerplate y código más limpio
+- Simplificación de la arquitectura
+- Mejor tree-shaking y rendimiento
+
+### ¿Por qué TailwindCSS?
+- Rapidez en prototipado
+- Consistencia visual
+- Enfoque mobile-first nativo
+
+### Arquitectura
+
+- **Separación clara** entre UI (components) y lógica (core)
+- **Slider custom** en lugar de librerías externas (control total)
+- **Mock de servicios** para simular integración con APIs
+- **ViewChild + ElementRef** para manipulación segura del DOM
+
+---
+
+## Buenas prácticas aplicadas
+
+- Standalone components (Angular 20)
+- Separación de concerns (core, components, layouts, pages)
+- Programación reactiva con RxJS
+- Mobile-first design
+- Testing con mocks y spies
+- TypeScript strict mode
+- Componentes reutilizables y escalables
+
+## Autor
+
+**Maria Fernanda Palencia Cáceres**
+
+- GitHub: [@mafer23](https://github.com/mafer23)
+- LinkedIn: [fernandapalencia](https://www.linkedin.com/in/fernandapalencia/)
+- Email: mafer18199420@gmail.com
+
+## Agradecimientos
+
+Gracias a Skandia por la oportunidad de demostrar habilidades en desarrollo frontend moderno.
+
+
+ ## Imagenes de la interfaz
+ 
+ #### Banner 
+ <img width="1325" height="599" alt="image" src="https://github.com/user-attachments/assets/1e0dd151-084f-40d8-a600-6bef5c16ee73" />
+
+ <img width="1100" height="577" alt="image" src="https://github.com/user-attachments/assets/0117fb19-ecab-4d81-8844-6699e406b4a7" />
+
+
+#### Slider
+<img width="1343" height="336" alt="image" src="https://github.com/user-attachments/assets/491025d7-d94d-4928-987c-7bb386857e12" />
+
+#### Footer
+<img width="1308" height="276" alt="image" src="https://github.com/user-attachments/assets/6c441b60-7b94-497a-bacf-6ce3bca0ac62" />
+
+#### Button Explore
+
+<img width="1249" height="585" alt="image" src="https://github.com/user-attachments/assets/a0cedadc-6d09-43d1-ac3e-27fb156cd512" />
+
+#### Responsive
+
+<img width="255" height="525" alt="image" src="https://github.com/user-attachments/assets/d1bd7b1a-e368-44de-b4bc-071a1251b868" />
+
+<img width="249" height="501" alt="image" src="https://github.com/user-attachments/assets/225fb201-f8b8-47da-aa74-425b7d51971c" />
+
+<img width="245" height="434" alt="image" src="https://github.com/user-attachments/assets/a6f6a6a7-589a-40c5-b67b-7e0a57f157de" />
