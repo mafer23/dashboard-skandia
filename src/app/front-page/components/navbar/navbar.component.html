@@ -1,0 +1,57 @@
+<header class="bg-gray-100 shadow relative z-50">
+    <div class="container mx-auto px-4 py-2 flex items-center justify-between">
+        <div class="w-18 flex items-center space-x-2 w-1/6">
+            <i class="fa-solid fa-bars text-green-500 cursor-pointer" (click)="toggleSidebar()"></i>
+        </div>
+        <div class="ml-14 flex flex-row w-3/5 items-center space-x-2">
+            <img src="assets/icon/Group123.svg" alt="Logo" class="h-4 w-auto">
+            <span class="text-gray-800 text-sm block sm:hidden">
+                | FPX
+            </span>
+            <span class="text-gray-800 text-sm sm:text-base hidden sm:block">
+                | Plan financiero Digital - FPX
+            </span>
+        </div>
+        <div class="hidden lg:flex space-x-4 w-2/5">
+            <div class="flex flex-row items-center space-x-2">
+                <img src="assets/icon/Happy.svg" class="h-4 w-auto mt-1" alt="">
+                <span class="text-green-500 font-semibold">Tu Financial Planner</span>
+            </div>
+            <div class="flex flex-row items-center space-x-2">
+                <img src="assets/icon/hand3.svg" class="h-4 w-auto mt-1" alt="">
+                <span class="text-green-500 font-semibold">Aportes</span>
+                <img src="assets/icon/compfaq.svg" class="h-6 w-auto" alt="">
+            </div>
+        </div>
+    </div>
+</header>
+
+<aside class="fixed left-0 h-full w-60 bg-gray-100 shadow-lg transform transition-transform duration-300 z-40 "
+    [class.-translate-x-full]="!sidebarOpen" [class.translate-x-0]="sidebarOpen">
+    <nav class="flex flex-col">
+        <a href="#" class="flex items-center p-3 bg-green-500 hover:bg-green-500 hover:text-white">
+            <img src="assets/icon/house.svg" class="h-5 w-4 mr-2 hover:text-white"  alt="Inicio">
+            <span class="text-white">Inicio</span>
+        </a>
+        <a href="#" class="flex items-center p-3 text-gray-700 hover:bg-green-500 hover:text-white">
+            <img src="assets/icon/hoja1.svg" class="h-5 w-4 mr-2" alt="Contratos">
+            <span class="text-gray-800">Contratos</span>
+        </a>
+        <a href="#" class="flex items-center p-3 text-gray-700 hover:bg-green-500 hover:text-white">
+            <img src="assets/icon/Tool.svg" class="h-5 w-4 mr-2" alt="Acciones">
+            <span class="text-gray-800">Acciones</span>
+        </a>
+        <a href="#" class="flex items-center p-3 text-gray-700 hover:bg-green-500 hover:text-white">
+            <img src="assets/icon/star.svg" class="h-5 w-4 mr-2" alt="Objetivos">
+            <span class="text-gray-800">Objetivos</span>
+        </a>
+        <a href="#" class="flex items-center p-3 text-gray-700 hover:bg-green-500 hover:text-white">
+            <img src="assets/icon/money.svg" class="h-5 w-4 mr-2" alt="Herramientas">
+            <span class="text-gray-800">Herramientas</span>
+        </a>
+        <a href="#" class="flex items-center p-3 text-gray-700 hover:bg-green-500 hover:text-white">
+            <img src="assets/icon/talk2.svg" class="h-5 w-4 mr-2" alt="Servicio al cliente">
+            <span class="text-gray-800">Servicio al cliente</span>
+        </a>
+    </nav>
+</aside>

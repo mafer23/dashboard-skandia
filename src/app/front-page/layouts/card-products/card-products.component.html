@@ -1,0 +1,29 @@
+<section>
+  <div *ngIf="card"
+    class="w-auto h-70 bg-white border-1 border-gray-300 rounded-xl shadow-md min-w-[260px] max-w-[300px] overflow-hidden relative flex flex-col">
+    <div class="absolute w-6 h-6 top-4 right-2 border- border-green-500">
+      <input type="checkbox" class="w-5 h-5 bg-green-500 border-green-500  rounded-md">
+    </div>
+    <div class="p-4 flex-1">
+      <h3 class="text-base font-semibold text-gray-800">{{ card.nameProduct }}</h3>
+      <p class="text-gray-500 text-sm">#{{ card.numberProduct }}</p>
+      <hr class="my-3 border-gray-200">
+      <p class="text-sm text-gray-800 font-semibold">Ya cuentas con:</p>
+      <p class="text-green-600 font-bold text-lg">
+        {{ card.balanceProduct | currency:'USD':'symbol':'1.0-0' }}
+      </p>
+    </div>
+
+    <div class="bg-gray-200 px-3 py-4 text-center text-sm rounded-b-xl flex flex-col items-center">
+      <div class="flex gap-4">
+        <img [src]="icon" alt="icono tarjeta" class="w-8 h-8" />
+      </div>
+      <p class="text-gray-500 text-xs">
+        ¡Súper ya tienes los
+        para tu objetivo!
+        <span class="font-semibold text-gray-700">Úsalos cuando lo desees.</span>
+      </p>
+    </div>
+  </div>
+
+</section>
